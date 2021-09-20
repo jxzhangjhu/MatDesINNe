@@ -1,0 +1,294 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ReversibleGraphNet(\
+  (module_list): ModuleList(\
+    (0): None\
+    (1): GLOWCouplingBlock(\
+      (s1): Sequential(\
+        (0): Linear(in_features=4, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=8, bias=True)\
+      )\
+      (s2): Sequential(\
+        (0): Linear(in_features=5, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=6, bias=True)\
+      )\
+    )\
+    (2): PermuteRandom()\
+    (3): GLOWCouplingBlock(\
+      (s1): Sequential(\
+        (0): Linear(in_features=4, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=8, bias=True)\
+      )\
+      (s2): Sequential(\
+        (0): Linear(in_features=5, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=6, bias=True)\
+      )\
+    )\
+    (4): PermuteRandom()\
+    (5): GLOWCouplingBlock(\
+      (s1): Sequential(\
+        (0): Linear(in_features=4, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=8, bias=True)\
+      )\
+      (s2): Sequential(\
+        (0): Linear(in_features=5, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=6, bias=True)\
+      )\
+    )\
+    (6): PermuteRandom()\
+    (7): GLOWCouplingBlock(\
+      (s1): Sequential(\
+        (0): Linear(in_features=4, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=8, bias=True)\
+      )\
+      (s2): Sequential(\
+        (0): Linear(in_features=5, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=6, bias=True)\
+      )\
+    )\
+    (8): PermuteRandom()\
+    (9): GLOWCouplingBlock(\
+      (s1): Sequential(\
+        (0): Linear(in_features=4, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=8, bias=True)\
+      )\
+      (s2): Sequential(\
+        (0): Linear(in_features=5, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=6, bias=True)\
+      )\
+    )\
+    (10): PermuteRandom()\
+    (11): GLOWCouplingBlock(\
+      (s1): Sequential(\
+        (0): Linear(in_features=4, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=8, bias=True)\
+      )\
+      (s2): Sequential(\
+        (0): Linear(in_features=5, out_features=256, bias=True)\
+        (1): ReLU()\
+        (2): Linear(in_features=256, out_features=6, bias=True)\
+      )\
+    )\
+    (12): PermuteRandom()\
+    (13): dummy()\
+    (14): None\
+  )\
+)\
+Starting training now\
+Doing Testing evaluation on the model now\
+This is Epoch 0, training loss 351491433.41176, testing loss 13410.71484\
+Doing Testing evaluation on the model now\
+This is Epoch 10, training loss 11.16148, testing loss 10.77427\
+Doing Testing evaluation on the model now\
+This is Epoch 20, training loss 7.35149, testing loss 7.37226\
+Doing Testing evaluation on the model now\
+This is Epoch 30, training loss 6.93216, testing loss 6.94385\
+Doing Testing evaluation on the model now\
+This is Epoch 40, training loss 6.77594, testing loss 7.61320\
+Doing Testing evaluation on the model now\
+This is Epoch 50, training loss 6.70649, testing loss 6.74848\
+Doing Testing evaluation on the model now\
+This is Epoch 60, training loss 6.64443, testing loss 6.73225\
+Doing Testing evaluation on the model now\
+This is Epoch 70, training loss 6.53473, testing loss 6.59139\
+Doing Testing evaluation on the model now\
+This is Epoch 80, training loss 6.39735, testing loss 6.55427\
+Doing Testing evaluation on the model now\
+This is Epoch 90, training loss 6.34142, testing loss 6.54621\
+Doing Testing evaluation on the model now\
+This is Epoch 100, training loss 6.20527, testing loss 6.55172\
+Doing Testing evaluation on the model now\
+This is Epoch 110, training loss 6.35805, testing loss 6.49942\
+Doing Testing evaluation on the model now\
+This is Epoch 120, training loss 6.21869, testing loss 6.94505\
+Doing Testing evaluation on the model now\
+This is Epoch 130, training loss 6.12906, testing loss 6.54351\
+Doing Testing evaluation on the model now\
+This is Epoch 140, training loss 6.18980, testing loss 6.49924\
+Doing Testing evaluation on the model now\
+This is Epoch 150, training loss 6.09985, testing loss 6.38837\
+Doing Testing evaluation on the model now\
+This is Epoch 160, training loss 6.00658, testing loss 6.32027\
+Doing Testing evaluation on the model now\
+This is Epoch 170, training loss 6.05518, testing loss 6.32548\
+Doing Testing evaluation on the model now\
+This is Epoch 180, training loss 6.02800, testing loss 6.54793\
+Doing Testing evaluation on the model now\
+This is Epoch 190, training loss 6.01256, testing loss 6.27588\
+Doing Testing evaluation on the model now\
+This is Epoch 200, training loss 5.93680, testing loss 6.29001\
+Doing Testing evaluation on the model now\
+This is Epoch 210, training loss 5.91288, testing loss 6.77511\
+Doing Testing evaluation on the model now\
+This is Epoch 220, training loss 5.86091, testing loss 6.26396\
+Doing Testing evaluation on the model now\
+This is Epoch 230, training loss 5.82960, testing loss 6.39261\
+Doing Testing evaluation on the model now\
+This is Epoch 240, training loss 5.82073, testing loss 6.23776\
+Doing Testing evaluation on the model now\
+This is Epoch 250, training loss 5.77938, testing loss 6.23836\
+Doing Testing evaluation on the model now\
+This is Epoch 260, training loss 5.80921, testing loss 6.29333\
+Doing Testing evaluation on the model now\
+This is Epoch 270, training loss 5.73593, testing loss 6.30830\
+Doing Testing evaluation on the model now\
+This is Epoch 280, training loss 5.72951, testing loss 6.29379\
+Doing Testing evaluation on the model now\
+This is Epoch 290, training loss 5.68133, testing loss 6.18019\
+Doing Testing evaluation on the model now\
+This is Epoch 300, training loss 5.77338, testing loss 6.16798\
+Doing Testing evaluation on the model now\
+This is Epoch 310, training loss 5.66164, testing loss 6.24579\
+Doing Testing evaluation on the model now\
+This is Epoch 320, training loss 5.70316, testing loss 6.20700\
+Doing Testing evaluation on the model now\
+This is Epoch 330, training loss 5.66321, testing loss 6.14307\
+Doing Testing evaluation on the model now\
+This is Epoch 340, training loss 5.63100, testing loss 6.24692\
+Doing Testing evaluation on the model now\
+This is Epoch 350, training loss 5.58932, testing loss 6.26215\
+Doing Testing evaluation on the model now\
+This is Epoch 360, training loss 5.56855, testing loss 6.18369\
+Doing Testing evaluation on the model now\
+This is Epoch 370, training loss 5.64017, testing loss 6.19217\
+Doing Testing evaluation on the model now\
+This is Epoch 380, training loss 5.57631, testing loss 6.11398\
+Doing Testing evaluation on the model now\
+This is Epoch 390, training loss 5.58035, testing loss 6.16086\
+Doing Testing evaluation on the model now\
+This is Epoch 400, training loss 5.52066, testing loss 6.18298\
+Doing Testing evaluation on the model now\
+This is Epoch 410, training loss 5.51151, testing loss 6.12323\
+Doing Testing evaluation on the model now\
+This is Epoch 420, training loss 5.50961, testing loss 6.17854\
+Doing Testing evaluation on the model now\
+This is Epoch 430, training loss 5.44345, testing loss 6.21589\
+Doing Testing evaluation on the model now\
+This is Epoch 440, training loss 5.50769, testing loss 6.23165\
+Doing Testing evaluation on the model now\
+This is Epoch 450, training loss 5.45296, testing loss 6.21252\
+Doing Testing evaluation on the model now\
+This is Epoch 460, training loss 5.45303, testing loss 6.16957\
+Doing Testing evaluation on the model now\
+This is Epoch 470, training loss 5.48008, testing loss 6.17518\
+Doing Testing evaluation on the model now\
+This is Epoch 480, training loss 5.45600, testing loss 6.32372\
+Doing Testing evaluation on the model now\
+This is Epoch 490, training loss 5.42042, testing loss 6.10781\
+Doing Testing evaluation on the model now\
+This is Epoch 500, training loss 5.45466, testing loss 6.16299\
+Doing Testing evaluation on the model now\
+This is Epoch 510, training loss 5.39453, testing loss 6.09696\
+Doing Testing evaluation on the model now\
+This is Epoch 520, training loss 5.42802, testing loss 6.11582\
+Doing Testing evaluation on the model now\
+This is Epoch 530, training loss 5.36650, testing loss 6.16852\
+Doing Testing evaluation on the model now\
+This is Epoch 540, training loss 5.37469, testing loss 6.10346\
+Doing Testing evaluation on the model now\
+This is Epoch 550, training loss 5.33434, testing loss 6.11567\
+Doing Testing evaluation on the model now\
+This is Epoch 560, training loss 5.33727, testing loss 6.21818\
+Doing Testing evaluation on the model now\
+This is Epoch 570, training loss 5.34691, testing loss 6.11380\
+Doing Testing evaluation on the model now\
+This is Epoch 580, training loss 5.32235, testing loss 6.16420\
+Doing Testing evaluation on the model now\
+This is Epoch 590, training loss 5.29350, testing loss 6.13452\
+Doing Testing evaluation on the model now\
+This is Epoch 600, training loss 5.31570, testing loss 6.16213\
+Doing Testing evaluation on the model now\
+This is Epoch 610, training loss 5.30023, testing loss 6.12146\
+Doing Testing evaluation on the model now\
+This is Epoch 620, training loss 5.26585, testing loss 6.15684\
+Doing Testing evaluation on the model now\
+This is Epoch 630, training loss 5.28355, testing loss 6.11529\
+Doing Testing evaluation on the model now\
+This is Epoch 640, training loss 5.24859, testing loss 6.14862\
+Doing Testing evaluation on the model now\
+This is Epoch 650, training loss 5.25265, testing loss 6.12444\
+Doing Testing evaluation on the model now\
+This is Epoch 660, training loss 5.24255, testing loss 6.23485\
+Doing Testing evaluation on the model now\
+This is Epoch 670, training loss 5.24612, testing loss 6.19935\
+Doing Testing evaluation on the model now\
+This is Epoch 680, training loss 5.23158, testing loss 6.20276\
+Doing Testing evaluation on the model now\
+This is Epoch 690, training loss 5.21252, testing loss 6.18804\
+Doing Testing evaluation on the model now\
+This is Epoch 700, training loss 5.23547, testing loss 6.12492\
+Doing Testing evaluation on the model now\
+This is Epoch 710, training loss 5.21612, testing loss 6.15368\
+Doing Testing evaluation on the model now\
+This is Epoch 720, training loss 5.20341, testing loss 6.13937\
+Doing Testing evaluation on the model now\
+This is Epoch 730, training loss 5.18222, testing loss 6.12628\
+Doing Testing evaluation on the model now\
+This is Epoch 740, training loss 5.19876, testing loss 6.21059\
+Doing Testing evaluation on the model now\
+This is Epoch 750, training loss 5.18319, testing loss 6.19193\
+Doing Testing evaluation on the model now\
+This is Epoch 760, training loss 5.19676, testing loss 6.17105\
+Doing Testing evaluation on the model now\
+This is Epoch 770, training loss 5.16310, testing loss 6.19487\
+Doing Testing evaluation on the model now\
+This is Epoch 780, training loss 5.17414, testing loss 6.19079\
+Doing Testing evaluation on the model now\
+This is Epoch 790, training loss 5.16965, testing loss 6.16260\
+Doing Testing evaluation on the model now\
+This is Epoch 800, training loss 5.15092, testing loss 6.19817\
+Doing Testing evaluation on the model now\
+This is Epoch 810, training loss 5.15298, testing loss 6.17205\
+Doing Testing evaluation on the model now\
+This is Epoch 820, training loss 5.14730, testing loss 6.15176\
+Doing Testing evaluation on the model now\
+This is Epoch 830, training loss 5.14624, testing loss 6.17287\
+Doing Testing evaluation on the model now\
+This is Epoch 840, training loss 5.14979, testing loss 6.18351\
+Doing Testing evaluation on the model now\
+This is Epoch 850, training loss 5.15568, testing loss 6.19993\
+Doing Testing evaluation on the model now\
+This is Epoch 860, training loss 5.14219, testing loss 6.18698\
+Doing Testing evaluation on the model now\
+This is Epoch 870, training loss 5.12428, testing loss 6.16977\
+Doing Testing evaluation on the model now\
+This is Epoch 880, training loss 5.13876, testing loss 6.22963\
+Doing Testing evaluation on the model now\
+This is Epoch 890, training loss 5.12667, testing loss 6.17928\
+Doing Testing evaluation on the model now\
+This is Epoch 900, training loss 5.13510, testing loss 6.15539\
+Doing Testing evaluation on the model now\
+This is Epoch 910, training loss 5.11648, testing loss 6.20722\
+Doing Testing evaluation on the model now\
+This is Epoch 920, training loss 5.11344, testing loss 6.21927\
+Doing Testing evaluation on the model now\
+This is Epoch 930, training loss 5.11195, testing loss 6.18539\
+Doing Testing evaluation on the model now\
+This is Epoch 940, training loss 5.09814, testing loss 6.19189\
+Doing Testing evaluation on the model now\
+This is Epoch 950, training loss 5.09935, testing loss 6.20580\
+Doing Testing evaluation on the model now\
+This is Epoch 960, training loss 5.10407, testing loss 6.17375\
+Doing Testing evaluation on the model now\
+This is Epoch 970, training loss 5.09877, testing loss 6.23401\
+Doing Testing evaluation on the model now\
+This is Epoch 980, training loss 5.08974, testing loss 6.20873\
+Doing Testing evaluation on the model now\
+This is Epoch 990, training loss 5.09860, testing loss 6.22495\
+}
