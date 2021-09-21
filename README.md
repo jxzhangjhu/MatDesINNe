@@ -19,13 +19,19 @@ Install packages with:
 $ pip install -r requirements.txt
 ```
 
+The key packages and their versions used in our algorithm implementation are listed as follows
+* python==3.6+
+* FrEIA==0.2
+* torch==1.7+
+
 ## Datasets
-The datasets used in DevNet are also released here. See our anomaly detection dataset repository [ADRepository](https://github.com/GuansongPang/anomaly-detection-datasets) for more preprocessed datasets that are widely-used in other papers.
+The datasets used in MatDesINNe are also released here. Please find the dataset in
+  > Simulated_DataSets/MoS2
 
 
-## Credits
+<!-- ## Credits
 
-Some code of the [FrEIA framework](https://github.com/VLL-HD/FrEIA) was used for the implementation of Normalizing Flows. Follow [their tutorial](https://github.com/VLL-HD/FrEIA) if you need more documentation about it.
+Some code of the [FrEIA framework](https://github.com/VLL-HD/FrEIA) was used for the implementation of Normalizing Flows. Follow [their tutorial](https://github.com/VLL-HD/FrEIA) if you need more documentation about it. -->
 
 ## Citation
 ```bibtex
