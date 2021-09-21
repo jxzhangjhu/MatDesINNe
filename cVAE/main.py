@@ -11,16 +11,12 @@ import time
 import torch
 import argparse
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 from torchvision import transforms
 from torchvision.datasets import MNIST
 from torch.utils.data import DataLoader
 from collections import defaultdict
-
 from sklearn.model_selection import train_test_split
-
-import matplotlib.pyplot as plt
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -31,20 +27,6 @@ HIDDEN_DIM = 128        # hidden dimension
 LATENT_DIM = 3         # latent vector dimension
 N_CLASSES = 1          # number of classes in the data
 lr = 1e-3               # learning rate
-
-# transforms = transforms.Compose([transforms.ToTensor()])
-# train_dataset = datasets.MNIST(
-#     './data',
-#     train=True,
-#     download=True,
-#     transform=transforms)
-
-# test_dataset = datasets.MNIST(
-#     './data',
-#     train=False,
-#     download=True,
-#     transform=transforms
-# )
 
 
 ## MoS2 - 02-18-2021 dataset
@@ -188,6 +170,7 @@ def calculate_loss(x, reconstructed_x, mean, log_var):
     return RCL + KLD
 
 model = CVAE(INPUT_DIM, HIDDEN_DIM, LATENT_DIM, N_CLASSES)
+model.to(device)
 optimizer = optim.Adam(model.parameters(), lr=lr)
 
 

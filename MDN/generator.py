@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[39]:
-
-
 import numpy as np
 import torch
 import torch.optim as optim
@@ -13,13 +7,8 @@ from argparse import ArgumentParser
 from models import MixtureDensityNetwork
 from torch.autograd import Variable
 
-import pandas as pd
-from sklearn.model_selection import train_test_split
-import numpy as np
-device          = 'cuda:0' if torch.cuda.is_available() else 'cpu'
-
+device = 'cpu'
 model = MixtureDensityNetwork(dim_in=1, dim_out=7, n_components=3)
-
 
 # Specify a path
 PATH = 'MoS2_mdn.pkl'

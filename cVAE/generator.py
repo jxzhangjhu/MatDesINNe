@@ -33,21 +33,6 @@ LATENT_DIM = 3         # latent vector dimension
 N_CLASSES = 1          # number of classes in the data
 lr = 1e-3               # learning rate
 
-# transforms = transforms.Compose([transforms.ToTensor()])
-# train_dataset = datasets.MNIST(
-#     './data',
-#     train=True,
-#     download=True,
-#     transform=transforms)
-
-# test_dataset = datasets.MNIST(
-#     './data',
-#     train=False,
-#     download=True,
-#     transform=transforms
-# )
-
-
 ## MoS2 - 02-18-2021 dataset
 rng = 0
 data_x = pd.read_csv('../Simulated_DataSets/MoS2/data_x.csv', header=None).values
@@ -67,11 +52,6 @@ test_loader = torch.utils.data.DataLoader(
 train_loader = torch.utils.data.DataLoader(
     torch.utils.data.TensorDataset(x_train, y_train),
     batch_size=BATCH_SIZE, shuffle=True, drop_last=True)
-
-
-# train_iterator = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
-# test_iterator = DataLoader(test_dataset, batch_size=BATCH_SIZE)
-
 
 def idx2onehot(idx, n=N_CLASSES):
 
@@ -189,6 +169,7 @@ def calculate_loss(x, reconstructed_x, mean, log_var):
     return RCL + KLD
 
 model = CVAE(INPUT_DIM, HIDDEN_DIM, LATENT_DIM, N_CLASSES)
+model.to(device)
 optimizer = optim.Adam(model.parameters(), lr=lr)
 
 
@@ -264,7 +245,8 @@ PATH = 'MoS2_cvae.pt'
 
 # Load
 model = torch.load(PATH)
-# model.eval()
+model.to(device)
+model.eval()
 
 y0 = 1.0
 num_z = 1000
@@ -280,6 +262,3 @@ for i in range(num_z):
 
 fname = 'gen_samps_cvae.csv'
 np.savetxt(fname, rev_x, fmt='%.6f', delimiter=',')
-
-
-# In[ ]:

@@ -9,8 +9,8 @@ from torch.autograd import Variable
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-import numpy as np
-device          = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+
+device = 'cpu'
 
 rng = 0
 batch_size = 500
@@ -37,6 +37,7 @@ train_loader = torch.utils.data.DataLoader(
 
 
 model = MixtureDensityNetwork(dim_in=1, dim_out=7, n_components=3)
+model.to(device)
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 for epoch in range(n_epochs):
@@ -48,8 +49,7 @@ for epoch in range(n_epochs):
         optimizer.step()
 
     if epoch %10==0:
-        print(f"epoch: {epoch}" + f"Loss: {loss.data:.2f}")
-
+        print(f"epoch: {epoch}, " + f"Loss: {loss.data:.2f}")
 
 # save the model
 torch.save(model, 'MoS2_mdn.pkl')

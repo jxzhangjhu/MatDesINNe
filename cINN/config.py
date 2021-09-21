@@ -9,9 +9,7 @@ grad_clamp = 15
 eval_test = 10 # crystal small data issue, we have to use smaller one
 
 # Compute device to perform the training on, 'cuda' or 'cpu'
-# device          = 'cuda'
-# device          = 'cpu'
-device          = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device          = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 #######################
 #  Training schedule  #
@@ -43,36 +41,17 @@ ndim_y     = 1
 ndim_z     = 6
 ndim_pad_zy = 0
 
-# ndim_x     = 6
-# ndim_pad_x = 24
-#
-# ndim_y     = 25
-# ndim_z     = 5
-# ndim_pad_zy = 0
 
 train_forward_mmd    = True
 train_backward_mmd   = True
 train_reconstruction = False
 train_max_likelihood = False
 
-# train_forward_mmd    = False
-# train_backward_mmd   = False
-# train_reconstruction = False
-# train_max_likelihood = True
-
-# lambd_fit_forw       = 1.
-# lambd_mmd_forw       = 50.
-# lambd_reconstruct    = 1.
-# lambd_mmd_back       = 500.
-# lambd_max_likelihood = 1.
-
 lambd_fit_forw       = 1
 lambd_mmd_forw       = 1
 lambd_reconstruct    = 1
 lambd_mmd_back       = 1
 lambd_max_likelihood = 1
-
-
 
 # Both for fitting, and for the reconstruction, perturb y with Gaussian
 # noise of this sigma
