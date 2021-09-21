@@ -29,14 +29,11 @@ The key packages and their versions used in our algorithm implementation are lis
 
 ### Training
 
-Train MDN model
+To train the MDN, cVAE, INN and cINN model, please go to the folder and simply run 
 
-'''
-cd MDN
+```python
 python main.py
-'''
-
-
+```
 
 ### Pretrain Model
 
