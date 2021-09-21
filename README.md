@@ -23,6 +23,26 @@ The key packages and their versions used in our algorithm implementation are lis
 * python==3.6+
 * FrEIA==0.2
 * torch==1.7+
+* scikit-learn==0.24.1
+
+## Usage
+
+### Training
+
+Train MDN model
+
+'''
+cd MDN
+python main.py
+'''
+
+
+
+### Pretrain Model
+
+
+
+
 
 ## Datasets
 The datasets used in MatDesINNe are also released here. Please find the dataset in
