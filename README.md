@@ -1,9 +1,11 @@
 # MatDesINNe
 
+This is the official repository to the paper "[Inverse design of two-dimensional materials with invertible neural networks](https://arxiv.org/abs/2106.03013)" by Victor Fung, Jiaxin Zhang, Guoxiang Hu, P. Ganesh, Bobby G. Sumpter.
 
+## Abstract
+The ability to readily design novel materials with chosen functional properties on-demand represents a next frontier in materials discovery. However, thoroughly and efficiently sampling the entire design space in a computationally tractable manner remains a highly challenging task. To tackle this problem, we propose an inverse design framework (**MatDesINNe**) utilizing invertible neural networks which can map both forward and reverse processes between the design space and target property.
 
-## Brief Introduction
-The ability to readily design novel materials with chosen functional properties on-demand represents a next frontier in materials discovery. However, thoroughly and efficiently sampling the entire design space in a computationally tractable manner remains a highly challenging task. To tackle this problem, we propose an inverse design framework (**MatDesINNe**) utilizing invertible neural networks which can map both forward and reverse processes between the design space and target property. This approach can be used to generate materials candidates for a designated property, thereby satisfying the highly sought-after goal of inverse design. We then apply this framework to the task of band gap engineering in two-dimensional materials, starting with MoS2. Within the design space encompassing six degrees of freedom in applied tensile, compressive and shear strain plus an external electric field, we show the framework can generate novel, high fidelity, and diverse candidates with near-chemical accuracy. We extend this generative capability further to provide insights regarding metal-insulator transition, important for memristive neuromorphic applications among others, in MoS2 which is not otherwise possible with brute force screening. This approach is general and can be directly extended to other materials and their corresponding design spaces and target properties.
+This approach can be used to generate materials candidates for a designated property, thereby satisfying the highly sought-after goal of inverse design. We then apply this framework to the task of band gap engineering in two-dimensional materials, starting with MoS2. Within the design space encompassing six degrees of freedom in applied tensile, compressive and shear strain plus an external electric field, we show the framework can generate novel, high fidelity, and diverse candidates with near-chemical accuracy.
 
 ## Getting Started
 
