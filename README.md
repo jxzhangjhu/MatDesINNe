@@ -42,11 +42,12 @@ python generator.py
 
 ### Pretrained Models
 
-We provided the pretained models for **MatDesINNe_cINN** and  **MatDesINNe_INN**. Generation and localization are critial two steps and can be done by running 
+We provided the pretained models for **MatDesINNe_cINN** and  **MatDesINNe_INN**. 
+Generation step can be done via
 ```python
 python generator.py
 ```
-
+The generated samples are refined by a localization step with gradient descent, by 
 ```python
 python localization.py
 ```
