@@ -54,7 +54,7 @@ python localization.py
 
 ## Datasets
 The datasets used in MatDesINNe are also released here. Please find the DFT dataset of MoS2 in
-    > Simulated_DataSets/MoS2
+> Simulated_DataSets/MoS2
 
 
 <!-- ## Credits
