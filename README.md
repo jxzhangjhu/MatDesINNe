@@ -16,7 +16,7 @@ and installing the packages there.
 Install packages with:
 
 ```
-$ pip install -r requirements.txt
+$ pip install -r requirement.txt
 ```
 
 The key packages and their versions used in our algorithm implementation are listed as follows
