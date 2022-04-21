@@ -1,6 +1,6 @@
 # MatDesINNe
 
-This is the official repository to the paper "[Inverse design of two-dimensional materials with invertible neural networks](https://arxiv.org/abs/2106.03013)" by Victor Fung, Jiaxin Zhang, Guoxiang Hu, P. Ganesh, Bobby G. Sumpter.
+This is the official repository to the paper "[Inverse design of two-dimensional materials with invertible neural networks](https://www.nature.com/articles/s41524-021-00670-x)" in [npj computational materials](https://www.nature.com/npjcompumats/) - Naure, by Victor Fung, Jiaxin Zhang, Guoxiang Hu, P. Ganesh, Bobby G. Sumpter.
 
 ## Abstract
 The ability to readily design novel materials with chosen functional properties on-demand represents a next frontier in materials discovery. However, thoroughly and efficiently sampling the entire design space in a computationally tractable manner remains a highly challenging task. To tackle this problem, we propose an inverse design framework (**MatDesINNe**) utilizing invertible neural networks which can map both forward and reverse processes between the design space and target property.
@@ -65,9 +65,13 @@ Some code of the [FrEIA framework](https://github.com/VLL-HD/FrEIA) was used for
 ```bibtex
 @article{fung2021inverse,
   title={Inverse design of two-dimensional materials with invertible neural networks},
-  author={Fung, Victor and Zhang, Jiaxin and Hu, Guoxiang and Ganesh, P and Sumpter, Bobby G},
-  journal={arXiv preprint arXiv:2106.03013},
-  year={2021}
+  author={Fung, Victor and Zhang, Jiaxin and Hu, Guoxiang and Ganesh, Panchapakesan and Sumpter, Bobby G},
+  journal={npj Computational Materials},
+  volume={7},
+  number={1},
+  pages={1--9},
+  year={2021},
+  publisher={Nature Publishing Group}
 }
 ```
 
