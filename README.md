@@ -1,6 +1,6 @@
 # MatDesINNe
 
-This is the official repository to the paper "[Inverse design of two-dimensional materials with invertible neural networks](https://www.nature.com/articles/s41524-021-00670-x)" in [npj computational materials - Naure]((https://www.nature.com/npjcompumats/), by Victor Fung, Jiaxin Zhang, Guoxiang Hu, P. Ganesh, Bobby G. Sumpter.
+This is the official repository to the paper "[Inverse design of two-dimensional materials with invertible neural networks](https://www.nature.com/articles/s41524-021-00670-x)" in [npj computational materials - Naure](https://www.nature.com/npjcompumats/), by Victor Fung, Jiaxin Zhang, Guoxiang Hu, P. Ganesh, Bobby G. Sumpter.
 
 ## Abstract
 The ability to readily design novel materials with chosen functional properties on-demand represents a next frontier in materials discovery. However, thoroughly and efficiently sampling the entire design space in a computationally tractable manner remains a highly challenging task. To tackle this problem, we propose an inverse design framework (**MatDesINNe**) utilizing invertible neural networks which can map both forward and reverse processes between the design space and target property.
