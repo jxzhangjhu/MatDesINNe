@@ -76,5 +76,10 @@ Some code of the [FrEIA framework](https://github.com/VLL-HD/FrEIA) was used for
 ```
 
 ## License
-
 This project is licensed under the MIT License.
+
+## Acknowledgements 
+Contributors: Jiaxin Zhang and Victor Fung
+
+## Contact 
+Jiaxin Zhang (zhangj@onrl.gov)
