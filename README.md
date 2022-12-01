@@ -1,4 +1,4 @@
-# MatDesINNe
+# MatDesINNe/iPage
 
 This is the official repository to the paper "[Inverse design of two-dimensional materials with invertible neural networks](https://www.nature.com/articles/s41524-021-00670-x)" in [npj computational materials - Naure](https://www.nature.com/npjcompumats/), by Victor Fung, Jiaxin Zhang, Guoxiang Hu, P. Ganesh, Bobby G. Sumpter.
 
