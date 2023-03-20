@@ -82,4 +82,4 @@ This project is licensed under the MIT License.
 Contributors: Jiaxin Zhang and Victor Fung
 
 ## Contact 
-Jiaxin Zhang (zhangj@ornl.gov)
+Jiaxin Zhang (jxzhangai@gmail.com) and Victor Fung (victorfung@gatech.edu)
